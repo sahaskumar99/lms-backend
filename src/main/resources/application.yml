@@ -1,0 +1,12 @@
+# src/main/resources/application.yml
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/lms-auth
+
+jwt:
+  secret: "mysupersecretkeymysupersecretkeymysupersecretkeymysupersecretkey1234" # >=64 chars for HS512
+  accessTokenMinutes: 15
